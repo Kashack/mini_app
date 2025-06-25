@@ -1,8 +1,10 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:money_assistant_2608/project/auth_pages/sign_in.dart';
+import '../firebase_options.dart';
 import 'database_management/shared_preferences_services.dart';
 import 'localization/app_localization.dart';
 import 'home.dart';
@@ -13,6 +15,9 @@ void realMain() async {
   sharedPrefs.setItems(setCategoriesToDefault: false);
   sharedPrefs.getCurrency();
   sharedPrefs.getAllExpenseItemsLists();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp()
       // AppLock(
       // builder: (args) => MyApp(),
@@ -33,6 +38,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   late Locale? _locale;
+
   setLocale(Locale locale) {
     setState(() {
       _locale = locale;
@@ -65,16 +71,16 @@ class _MyAppState extends State<MyApp> {
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             textTheme: TextTheme(
-              headline3: TextStyle(
+              displaySmall: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 45.0,
                 color: Colors.deepOrangeAccent,
               ),
-              button: TextStyle(
+              labelLarge: TextStyle(
                 fontFamily: 'OpenSans',
               ),
-              subtitle1: TextStyle(fontFamily: 'NotoSans'),
-              bodyText2: TextStyle(fontFamily: 'NotoSans'),
+              titleMedium: TextStyle(fontFamily: 'NotoSans'),
+              bodyMedium: TextStyle(fontFamily: 'NotoSans'),
             ),
             colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.indigo)
                 .copyWith(secondary: Colors.orange),
