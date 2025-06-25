@@ -45,46 +45,46 @@ class SignIn extends StatelessWidget {
         recoverPasswordDescription: 'recoverPasswordDescription',
         recoverPasswordSuccess: 'Password rescued successfully',
       ),
-      loginProviders: <LoginProvider>[
-        LoginProvider(
-          icon: FontAwesomeIcons.google,
-          label: 'Google',
-          callback: () async {
-            print('start google sign in');
-            await Future.delayed(Duration(seconds: 1));
-            print('stop google sign in');
-            return null;
-          },
-        ),
-        LoginProvider(
-          icon: FontAwesomeIcons.facebookF,
-          label: 'Facebook',
-          callback: () async {
-            print('start facebook sign in');
-            await Future.delayed(Duration(seconds: 1));
-            print('stop facebook sign in');
-            return null;
-          },
-        ),
-        LoginProvider(
-          icon: FontAwesomeIcons.linkedinIn,
-          callback: () async {
-            print('start linkdin sign in');
-            await Future.delayed(Duration(seconds: 1));
-            print('stop linkdin sign in');
-            return null;
-          },
-        ),
-        LoginProvider(
-          icon: FontAwesomeIcons.githubAlt,
-          callback: () async {
-            print('start github sign in');
-            await Future.delayed(Duration(seconds: 1));
-            print('stop github sign in');
-            return null;
-          },
-        ),
-      ],
+      // loginProviders: <LoginProvider>[
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.google,
+      //     label: 'Google',
+      //     callback: () async {
+      //       print('start google sign in');
+      //       await Future.delayed(Duration(seconds: 1));
+      //       print('stop google sign in');
+      //       return null;
+      //     },
+      //   ),
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.facebookF,
+      //     label: 'Facebook',
+      //     callback: () async {
+      //       print('start facebook sign in');
+      //       await Future.delayed(Duration(seconds: 1));
+      //       print('stop facebook sign in');
+      //       return null;
+      //     },
+      //   ),
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.linkedinIn,
+      //     callback: () async {
+      //       print('start linkdin sign in');
+      //       await Future.delayed(Duration(seconds: 1));
+      //       print('stop linkdin sign in');
+      //       return null;
+      //     },
+      //   ),
+      //   LoginProvider(
+      //     icon: FontAwesomeIcons.githubAlt,
+      //     callback: () async {
+      //       print('start github sign in');
+      //       await Future.delayed(Duration(seconds: 1));
+      //       print('stop github sign in');
+      //       return null;
+      //     },
+      //   ),
+      // ],
       theme: LoginTheme(
         primaryColor: Colors.teal,
         accentColor: Colors.yellow,
