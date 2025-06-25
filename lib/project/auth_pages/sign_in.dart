@@ -24,7 +24,6 @@ class SignIn extends StatelessWidget {
     );
     return FlutterLogin(
       title: 'MMAS',
-      logo: 'Hi!',
       // onSignup: _authenticateUsers,
       onLogin: _authenticateUsers,
       onRecoverPassword: _onRecoverPassword,
