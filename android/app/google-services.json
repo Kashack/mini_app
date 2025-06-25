@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "130845731368",
+    "project_id": "fruit-ninja-bfc40",
+    "storage_bucket": "fruit-ninja-bfc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130845731368:android:720d7ffe77b324cd9fa31d",
+        "android_client_info": {
+          "package_name": "com.example.fruit_ninja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130845731368-4tvr0nl6ilotke9dvq9okljc0l9fd011.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fruit_ninja",
+            "certificate_hash": "6a4c2a356d79f11c612ffd245c4e72ef121cbc47"
+          }
+        },
+        {
+          "client_id": "130845731368-86uuukl8tld48p35tpr3pjegas9uj9bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbxKwiOKqlkQZQHlXomH4UrYbOD-FMnQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130845731368-86uuukl8tld48p35tpr3pjegas9uj9bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "130845731368-7ooco1d4n2phmkdi8bt7h9r223nratmf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fruitNinja"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130845731368:android:d4257e2a660a1f4a9fa31d",
+        "android_client_info": {
+          "package_name": "com.mmas.money_assistant_2608"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130845731368-86uuukl8tld48p35tpr3pjegas9uj9bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbxKwiOKqlkQZQHlXomH4UrYbOD-FMnQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130845731368-86uuukl8tld48p35tpr3pjegas9uj9bf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "130845731368-7ooco1d4n2phmkdi8bt7h9r223nratmf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fruitNinja"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
