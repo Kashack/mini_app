@@ -82,8 +82,11 @@ List<Color> chartPieColors = [
 String format(double number) =>
     NumberFormat("#,###,###,###,###,###.##", "en_US").format(number);
 
-IconData iconData(CategoryItem item) => IconData(item.iconCodePoint,
-    fontPackage: item.iconFontPackage, fontFamily: item.iconFontFamily);
+IconData iconData(CategoryItem item) => IconData(
+      item.iconCodePoint,
+      fontPackage: item.iconFontPackage,
+      fontFamily: item.iconFontFamily,
+    );
 
 //should description be '' or null?
 CategoryItem categoryItem(IconData icon, String name) =>
